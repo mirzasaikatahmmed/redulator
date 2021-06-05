@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Required Social Preview MetaTags -->
+
+    <!-- Primary Meta Tags -->
+    <meta
+      name="title"
+      content="Redulator — The Ultimate Reading Time Calculator"
+    />
+    <meta
+      name="description"
+      content="Redulator — The Ultimate Reading Time Calculator is a simple Vanilla JavaScript project to calculate the reading time of a paragraph/post. Made with ❤ by Mirza Saikat Ahmmed"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://" />
+    <meta
+      property="og:title"
+      content="Redulator — The Ultimate Reading Time Calculator"
+    />
+    <meta
+      property="og:description"
+      content="Redulator — The Ultimate Reading Time Calculator is a simple Vanilla JavaScript project to calculate the reading time of a paragraph/post. Made with ❤ by Mirza Saikat Ahmmed"
+    />
+    <meta property="og:image" content="" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://" />
+    <meta
+      property="twitter:title"
+      content="Redulator — The Ultimate Reading Time Calculator"
+    />
+    <meta
+      property="twitter:description"
+      content="Redulator — The Ultimate Reading Time Calculator is a simple Vanilla JavaScript project to calculate the reading time of a paragraph/post. Made with ❤ by Mirza Saikat Ahmmed"
+    />
+    <meta property="twitter:image" content="" />
+
+    <!-- End of Required Social Preview MetaTags -->
+
+    <!-- Nunito Google Font -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Redulator — The Ultimate Reading Time Calculator</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <h1>
+          <span class="redulator-icon">
+            <!-- Logo -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="3rem"
+              height="3rem"
+              fill="currentColor"
+              class="bi bi-stopwatch"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"
+              />
+              <path
+                d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"
+              />
+            </svg>
+          </span>
+          Redulator
+        </h1>
+        <p>
+          Calculate Estimate Reading Time of Any Post or Article Using
+          <span class="colored-cap">Redulator</span>
+        </p>
+        <small>Responsive | Lightweight | Functional</small>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <div class="container">
+        <div class="form-container">
+          <form id="input-form">
+            <textarea
+              name="input"
+              id="input"
+              placeholder="Type/Paste your long paragraph to calculate the reading time..."
+              spellcheck="false"
+            ></textarea>
+          </form>
+          <div class="counters">
+            <div class="left-counter">
+              <span class="clock-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1.5rem"
+                  height="1.5rem"
+                  fill="currentColor"
+                  class="bi bi-clock"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                  />
+                </svg>
+              </span>
+              <p id="time">Type to Calculate Time</p>
+            </div>
+            <div class="right-counter">
+              <span class="chars-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1.5rem"
+                  height="1.5rem"
+                  fill="currentColor"
+                  class="bi bi-card-text"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"
+                  />
+                  <path
+                    d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"
+                  />
+                </svg>
+              </span>
+              <p id="chars">Type to Count Characters</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Article Section -->
+<!--     <article></article> -->
+
+    <!-- Footer Section -->
+    <footer>
+      <p>
+        Made With <span class="colored-cap">❤</span> By
+        <a href="http://github.com/mirzasaikatahmmed" target="_blank">
+          Mirza Saikat Ahmmed
+        </a>
+      </p>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="main.js"></script>
+  </body>
+</html>
+
